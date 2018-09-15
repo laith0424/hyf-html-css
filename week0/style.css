@@ -1,0 +1,32 @@
+
+.green-background {
+  background-color: rgb(164, 209, 211);
+}
+.profile-image {
+    width: 250px;
+    border-color: rgb(49, 48, 48);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  .mainBar{
+      width: 100%;
+      height: 5px;
+      color: black;
+      
+  }
+  .page-header {
+    border-color: rgb(65, 57, 57);
+    border-width: 5px;
+    border-style: solid;
+    background-image: url("img/headerimage.jpg");
+    background-position: 50% 75%;
+    background-size: cover;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: -16.5rem;
+    min-height: 25vh;
+}
+.font-style{
+    font-size: 30px;
+}
