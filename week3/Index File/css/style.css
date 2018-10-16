@@ -8,10 +8,6 @@ body{
 
 
 
-#box-container:first-child{
-  display: block;
-}
-
 
 #box-container {
   clear: both;
@@ -40,7 +36,7 @@ body{
   height: 25%;
   background-color: #ffffff;
   margin: 0 auto;
-  /*text-align: center;*/
+  text-align: center;
   margin-bottom: 1em;
   border-bottom: solid 0.1em #EFEFEF;
 }
@@ -58,18 +54,21 @@ body{
   background-color: #ffffff;
   text-align: center;
 }
-
+/*
 .menu__footer{
   width: 92%;
   height: 98%;
   margin: 1% 1% 1% 1%;
   background-color: #ffffff;
   text-align: left;
-}
+}*/
 .site-footer__list{
   list-style: none;
-  width: 100%;
-  height: 100%;
+  width: 92%;
+  height: 98%;
+  margin: 1% 1% 1% 1%;
+  background-color: #ffffff;
+  text-align: left;
 }
 
 
@@ -79,6 +78,7 @@ body{
   height: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -91,6 +91,7 @@ body{
   height: 2.5%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
@@ -104,8 +105,11 @@ body{
   background-color: #fff;
   width: 100%;
   height: 17em;
+  
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+
   border-bottom: solid 0.1em #EFEFEF;
 }
 
@@ -115,6 +119,7 @@ body{
   height: 98%;
   margin: 1% 1% 1% 1%; 
   background-color: #fff;
+  font-size: 100% !important;
 }
 
 #footer{
@@ -142,11 +147,11 @@ body{
 
 #box-1 {
   background-color: #fff;
-  width: 38%; 
+  width: 32%; 
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0.5em;
+  margin:   1% 1% 1% 1%;
 }
 
 #box-1 .article{
@@ -179,11 +184,11 @@ body{
 
 #box-2 {
   background-color: #fff;
-  width: 24%;
+  width: 20%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0.5em;
+  margin:   1% 1% 1% 1%;
 }
 
 #box-2 .article{
@@ -206,11 +211,11 @@ body{
 
 #box-3 {
   background-color: #fff;
-  width: 38%;
+  width: 32%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0.5em;  
+  margin:   1% 1% 1% 1%;
 }
 
 #box-3 .article{
@@ -351,3 +356,174 @@ p{
   line-height: 1.4;
   font-weight: 400;
 }
+
+.site-footer__list-item{
+  font-size: 100%;
+}
+
+
+
+
+
+
+
+@media (min-width: 420px) {
+  #headdiv{
+    display: none;
+  }
+
+
+
+  #footdiv{
+    height: 75em;
+  } 
+  .footList{
+    height: 23%;
+    width  : 98%;
+    font-size: 150% !important;  
+ }
+  .site-footer__list-item{
+    border-bottom: solid 1px #EFEFEF;
+    border-top: solid 1px #EFEFEF;
+    padding: 0;
+  }
+
+
+
+  .slide{
+    width: 98%;
+    height: 23%;
+    }
+
+
+
+    #box-1{
+      width: 98%;
+      height: 50%;
+      margin:   1% 1% 1% 1%;
+    }
+    #box-2{
+      width: 98%;
+      height: 30%;
+      margin:   1% 1% 1% 1%;
+    }
+    #box-3{
+      width: 98%;
+      height: 20%;
+      margin:   1% 1% 1% 1%;
+    }
+}
+
+
+@media (min-width: 600px) {
+  #headdiv{
+    display: none;    
+  }
+
+
+  #footdiv{
+    height: 40em;
+  }
+  .footList{
+    width: 46%;
+    height: 46px;
+    font-size: 100% !important;
+   
+  }
+  .site-footer__list-item{
+    border: 0;
+    padding: 1px;
+  }
+
+
+
+
+
+
+
+
+
+  .slide{
+    width: 46%;
+    height: 46%;
+    }
+
+
+
+    #box-1{
+      width: 98%;
+
+      height: 50%;
+      margin:   1% 1% 1% 1%;
+    }
+    #box-2{
+      width: 40%;
+      height: 50%;
+      margin-right: 2px;
+    }
+    #box-3{
+      width: 40%;
+      height: 50%;
+      margin-left: 2px;
+    }
+
+
+
+}
+
+
+
+
+@media (min-width: 800px) {
+  #headdiv{
+    display: block;
+  }
+
+
+  #footdiv{
+    height: 27em;
+  }
+  .footList{
+   width: 23%;
+   height: 98%;
+   font-size: 100% !important;
+  } 
+  .site-footer__list-item{
+    border: 0;
+    padding: 1px;
+  }
+
+
+
+
+  .slide{
+  width: 23%;
+  height: 98%;
+  }
+
+
+
+
+
+
+  #box-1{
+    width: 32%;
+    height: 100%;
+    margin:   1% 1% 1% 1%;
+  }
+  #box-2{
+    width: 20%;
+    height: 100%;
+    margin:   1% 1% 1% 1%;
+  }
+  #box-3{
+    width: 32%;
+    height: 100%;
+    margin:   1% 1% 1% 1%;
+  }
+
+
+
+}
+
+
